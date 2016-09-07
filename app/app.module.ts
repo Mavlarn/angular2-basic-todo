@@ -13,5 +13,4 @@ import { routes } from './app.routes';
     declarations:   [AppComponent, AboutComponent, ExampleComponent],
     bootstrap:      [AppComponent]
 })
-
 export class AppModule {}

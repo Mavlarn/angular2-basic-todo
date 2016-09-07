@@ -13,14 +13,3 @@ body {
 body, input[text], button { 
   color: #888; 
 }
-
-nav {
-  float: right;
-}
-header section {
-  display: inline-block;
-  width: 80%;
-}
-header nav {
-  width: 20%;
-}
