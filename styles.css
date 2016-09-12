@@ -7,9 +7,20 @@ h2, h3 {
   color: #444;
   font-weight: lighter;
 }
-body { 
-  margin: 2em; 
+
+.app-root-loader{
+  text-align: center;
+  padding: 30px;
 }
-body, input[text], button { 
-  color: #888; 
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #f5f5f5;
+	color: #4d4d4d;
+	min-width: 230px;
+	max-width: 550px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
 }
