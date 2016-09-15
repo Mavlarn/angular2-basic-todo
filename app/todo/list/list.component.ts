@@ -2,19 +2,20 @@ import { Component } from '@angular/core';
 
 import { Todo } from '../todo';
 import { TodoService } from '../todo.service';
-import { TodoItemComponent } from '../item/item.component';
 
 @Component({
     selector: 'todo-list',
     templateUrl: 'app/todo/list/list.component.html',
-    styleUrls: ['app/todo//list/list.component.css'],
-    // directives: [TodoItemComponent]
+    styleUrls: ['app/todo//list/list.component.css']
 })
 export class TodoListComponent {
     newTodo: Todo = new Todo();
-    constructor(private todoService: TodoService) {
-    }
+    constructor(private todoService: TodoService) { }
+
     addTodo() {
+        if (!this.newTodo.title.trim()) {
+            return;
+        }
         this.todoService.addTodo(this.newTodo);
         this.newTodo = new Todo();
     }

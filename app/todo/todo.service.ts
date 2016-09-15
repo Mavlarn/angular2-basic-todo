@@ -16,7 +16,6 @@ export class TodoService {
       todo.id = ++this.lastId;
     }
     this.todos.push(todo);
-    console.log(JSON.stringify(this.getAllTodos()));
     return this;
   }
 
